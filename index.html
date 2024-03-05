@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Print and DragDrop</title>
+</head>
+<body>
+    <div class="wrraper">
+       <div class="flex_left">
+        <nav id="data" class="navigation draggable" draggable="true" >
+            <div id="logo">
+                <img src="./images/icon-gac455be0d_640.png" alt="" draggable="true" id="secondImg">
+            </div>
+            <ul class="lists">
+               <li class="box"><a href="#Home" draggable="true">Home</a></li>
+               <li class="box"><a href="#Servises-continer" draggable="true">Services</a></li>
+               <li class="box"><a href="#client-section" draggable="true">Clients</a></li>
+               <li class="box"><a href="#Contact" draggable="true">Contact</a></li>
+            </ul>
+            <div class="loginbtns">
+                
+                <button>Sign in</button>
+            </div>
+ 
+           </nav>
+           <section>
+            <div class="slider draggable" draggable="true" id="sliders">
+                <button onclick="preSlide()">previous</button draggable="true">
+                <img src="./images/healthy-food-school-age-children.jpg" id="secondImg" draggable="true">
+                <button onclick="nextSlide()">Next</button draggable="true">
+            </div>
+           </section>
+           <section>
+            <div class="boxescart draggable" id="d" draggable="true">
+                <h1 class="servicesHeading">Our Services</h1>
+                <div class="servises" id="boxes" draggable="true">
+                 <div class="box">
+                     <img src="./images/hamburger-ga16c6c50b_640.png" alt="" id="secondImg">
+                     <h2 class="h-secandry">Food Ordering</h2>
+                     <p class="peras">Rerum rem magni pariatur odit saepe fuga sunt at.</p>
+                 </div>
+              
+                 <div class="box">
+                     <img src="./images/taco-g6b424a09e_640.png" alt="" id="secondImg">
+                     <h2 class="h-secandry">Food Ordering</h2>
+                     <p class="peras">Rerum rem magni pariatur odit saepe fuga sunt at.</p>
+                 </div>
+                 
+                 <div class="box">
+                     <img src="./images/dilevery_boy.jpg" alt="" id="secondImg">
+                     <h2 class="h-secandry">Food Ordering</h2>
+                     <p class="peras">Rerum rem magni pariatur odit saepe fuga sunt at.</p>
+                 </div>
+             </div>
+            </div>
+           </section>
+           <footer class="draggable" id="more" draggable="true">
+            <div class="center">
+                copyright &copy; www.myfoodcatring.com all right reserved!           
+            </div>
+           </footer>    
+           <button onclick="Print()" class="btns">Print</button>  
+       </div>
+       <div class="flex_right" id="drop">
+        
+       </div>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
